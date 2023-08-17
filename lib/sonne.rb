@@ -279,4 +279,17 @@ module Sonne
       $stdout.flush
     end
   end
+
+  def self.Tree(tree, depth, islast)
+    indent = "    " * depth
+    prefix = islast ? "┗━━ " : "┃━━ "
+    if tree.is_a?(String)
+      puts indent + prefix + tree
+    elsif tree.is_a?(Array)
+      puts indent + prefix + tree[0]
+      (1...tree.length).each do |i|
+        Tree(tree[i], depth + 1, i == tree.length - 1)
+      end
+    end
+  end
 end

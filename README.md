@@ -38,6 +38,27 @@ puts x
 ```
 This will also print colored and styled ``Hello, World!`` in the terminal.
 
+## Tree
+
+**Sonne.rb** has a ``Tree`` function which can generate a customizable tree view.
+
+Example usage:
+```ruby
+require "sonne"
+
+x = ["A", ["B", ["C"], ["D"]]]
+
+Sonne.Tree(x, 0, true)
+```
+Output:
+
+```
+┗━━ A
+    ┃━━ B
+        ┗━━ C
+    ┗━━ D
+```
+
 ## Other Functions
 ``clear()``: Clears the terminal screen.
 
