@@ -8,7 +8,7 @@
 
 # Setup
 
-***All the features in Sonne, the Python library, will be added to Sonne.rb as soon as possible.***
+***All the features in Sonne.py, will be added to Sonne.rb as soon as possible.***
 
 ```ruby
 gem install sonne
